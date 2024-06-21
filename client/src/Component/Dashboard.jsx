@@ -5,7 +5,7 @@ import Users from "./Users"
 
 const Dashboard = () => {
     const [list, setList] = useState([])
-    let URL = "http://localhost:2000/dashboard"
+    let URL = "https://personalworknode.vercel.app/dashboard"
     useEffect(() => {
         axios.get(URL).then((res)=>{
             setList(res.data)

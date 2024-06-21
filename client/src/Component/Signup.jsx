@@ -14,7 +14,7 @@ export default function Signup () {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    let url = "http://localhost:2000/signup"
+    let url = "https://personalworknode.vercel.app/signup"
 
     function createAccount(e) {
         e.preventDefault()
