@@ -5,6 +5,7 @@ import Signin from './Component/Signin'
 import Nav from './Component/Nav'
 import Home from './Component/Home'
 import Dashboard from './Component/Dashboard'
+// import Formik from './Component/Formik'
 
 const App = () => {
   
@@ -15,9 +16,10 @@ const App = () => {
       <Routes>
         <Route path='/' element ={<Nav/>}>
 
-        <Route path='signup' element ={<Signup/>}/>
-        <Route path='signin' element ={<Signin/>}/>
+        <Route path='/signup' element ={<Signup/>}/>
+        <Route path='/signin' element ={<Signin/>}/>
         <Route exact path='/' element ={<Home/>}></Route>
+        {/* <Route exact path='/formik' element ={<Formik/>}></Route> */}
         
         </Route>
         <Route path='/dashboard' element ={authToken? <Dashboard/> :<Signin/>}/>

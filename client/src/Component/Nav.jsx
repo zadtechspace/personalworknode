@@ -31,7 +31,7 @@ const Nav = () => {
     <div className="p-1 md:p-2 ">
        <section className="hidden md:flex justify-between items-center md:shadow-md  md:rounded-full  md:px-4 md:py-2">   
             <div className="shadow-md p-1 rounded-full"> 
-               <Link to={"/home"}><img src={comfortbaselogo} alt="" className="w-12 rounded-full"/></Link> 
+               <Link to={"/"}><img src={comfortbaselogo} alt="" className="w-12 rounded-full"/></Link> 
             </div>
 
             <div className="flex flex-col gap-3 items-end">
